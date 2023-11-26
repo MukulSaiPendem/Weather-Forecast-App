@@ -1,0 +1,32 @@
+.weather-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .date {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .temp {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .icon {
+    width: 50px; /* Adjust as needed */
+  }
+  
+  .condition {
+    font-size: 1rem;
+    color: #555;
+  }
+  
