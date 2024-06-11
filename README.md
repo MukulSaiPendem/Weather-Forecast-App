@@ -9,6 +9,7 @@ This repository contains the code for a weather forecast application. The applic
 - [Installation](#installation)
 - [Usage](#usage)
 - [File Structure](#file-structure)
+- [Code Explanation](#code-explanation)
 - [License](#license)
 
 ## Project Overview
@@ -86,6 +87,49 @@ Weather-Forecast-App/
 ├── package.json
 └── README.md
 ```
+
+## Code Explanation
+
+### Main Components
+
+1. **App.js**:
+   - The main component that sets up the structure of the application.
+   - Imports necessary styles and other components.
+   - Manages state and props to pass down data to child components.
+
+2. **components/WeatherCard.js**:
+   - Displays the weather information for a specific day.
+   - Uses props to receive and display weather data such as temperature, weather condition, and date.
+   - Styled with `WeatherCard.css`.
+
+3. **components/WeatherForecast.js**:
+   - Main component for displaying the weather forecast.
+   - Fetches weather data from an external API.
+   - Renders `WeatherCard` components for each day's forecast.
+   - Styled with `WeatherForecast.css`.
+
+4. **components/HourlyForecast.js**:
+   - Displays the hourly weather forecast.
+   - Receives and displays data for each hour within a day.
+
+5. **components/Day.js**:
+   - Utility component to format and display the day of the week.
+   - Used by `WeatherCard` to show the day name.
+
+### Supporting Files
+
+- **index.js**:
+  - Entry point for the React application.
+  - Renders the `App` component into the DOM.
+  
+- **App.css, index.css**:
+  - Contains global and component-specific styles.
+
+- **package.json**:
+  - Lists dependencies and scripts for the project.
+  
+- **public/index.html**:
+  - Main HTML file that serves the React application.
 
 ## License
 
